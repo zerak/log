@@ -295,7 +295,7 @@ func (l *logger) output(level Level, calldepth int, data []byte, format string, 
 		e.WriteByte('\n')
 	}
 	if level == FATAL {
-		stackBuf := Stack(4)
+		stackBuf := Stack(2)
 		e.WriteString("========= BEGIN STACK TRACE =========\n")
 		e.Write(stackBuf)
 		e.WriteString("========== END STACK TRACE ==========\n")

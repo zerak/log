@@ -145,6 +145,14 @@ func InitFileAndConsole(fullpath string, toStderrLevel logger.Level) error {
 	return InitWithProvider(p)
 }
 
+// InitFileAndConsole inits with console and file providers
+func InitFileAndColoredConsole(fullpath string, toStderrLevel logger.Level) error {
+	fileOpts := makeFileOpts(fullpath)
+	consoleOpts := makeConsoleOpts(toStderrLevel)
+	p := provider.NewMixProvider(provider.NewFile(fileOpts), provider.NewColoredConsole(consoleOpts))
+	return InitWithProvider(p)
+}
+
 // InitMultiFile inits with multifile provider
 func InitMultiFile(rootdir, filename string) error {
 	return Init("multifile", makeMultiFileOpts(rootdir, filename))

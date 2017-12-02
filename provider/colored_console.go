@@ -6,7 +6,7 @@ import (
 
 	"github.com/mattn/go-colorable"
 	"github.com/mattn/go-isatty"
-	"github.com/mkideal/log/logger"
+	"github.com/zerak/log/logger"
 )
 
 func init() {
