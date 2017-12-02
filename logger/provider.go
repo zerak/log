@@ -10,6 +10,7 @@ import (
 
 // Provider define an interface for writing logs
 type Provider interface {
+	GetLevel() Level
 	Write(level Level, headerLength int, data []byte) error
 	Close() error
 }

@@ -9,8 +9,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/mkideal/log/logger"
-	"github.com/mkideal/log/provider"
+	"github.com/zerak/log/logger"
+	"github.com/zerak/log/provider"
 )
 
 const (
@@ -159,6 +159,14 @@ func InitMultiFileAndConsole(rootdir, filename string, toStderrLevel logger.Leve
 	multifileOpts := makeMultiFileOpts(rootdir, filename)
 	consoleOpts := makeConsoleOpts(toStderrLevel)
 	p := provider.NewMixProvider(provider.NewMultiFile(multifileOpts), provider.NewConsole(consoleOpts))
+	return InitWithProvider(p)
+}
+
+// InitMultiFileAndColoredConsole inits with colored console and multifile providers
+func InitMultiFileAndColoredConsole(rootdir, filename string, toStderrLevel logger.Level) error {
+	multifileOpts := makeMultiFileOpts(rootdir, filename)
+	consoleOpts := makeConsoleOpts(toStderrLevel)
+	p := provider.NewMixProvider(provider.NewMultiFile(multifileOpts), provider.NewColoredConsole(consoleOpts))
 	return InitWithProvider(p)
 }
 

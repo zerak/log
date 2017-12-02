@@ -11,7 +11,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/mkideal/log/logger"
+	"github.com/zerak/log/logger"
 )
 
 func init() {

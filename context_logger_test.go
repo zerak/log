@@ -7,8 +7,8 @@ import (
 	"io"
 	"testing"
 
-	"github.com/mkideal/log/logger"
-	"github.com/mkideal/log/provider"
+	"github.com/zerak/log/logger"
+	"github.com/zerak/log/provider"
 )
 
 func initMockLogger(w io.Writer, with bool) {

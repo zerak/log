@@ -274,7 +274,7 @@ func (l *logger) header(level Level, calldepth int) *entry {
 }
 
 func (l *logger) output(level Level, calldepth int, data []byte, format string, args ...interface{}) {
-	e := l.header(level, calldepth+3)
+	e := l.header(level, calldepth+4)
 	e.headerLength = e.Len()
 	if len(data) > 0 {
 		e.bodyBegin = e.Len()

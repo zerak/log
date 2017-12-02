@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mkideal/log/provider"
 	"github.com/stretchr/testify/assert"
+	"github.com/zerak/log/provider"
 )
 
 func TestParseLevel(t *testing.T) {

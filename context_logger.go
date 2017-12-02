@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/mkideal/log/logger"
+	"github.com/zerak/log/logger"
 )
 
 // Formatter formats the data of context

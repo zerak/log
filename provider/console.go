@@ -4,7 +4,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/mkideal/log/logger"
+	"github.com/zerak/log/logger"
 )
 
 func init() {

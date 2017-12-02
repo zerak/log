@@ -1,7 +1,7 @@
 package provider
 
 import (
-	"github.com/mkideal/log/logger"
+	"github.com/zerak/log/logger"
 )
 
 type LevelFilterFunc func(level logger.Level) bool
