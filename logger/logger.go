@@ -31,7 +31,7 @@ type Logger interface {
 	Trace(calldepth int, format string, args ...interface{})
 	// Debug outputs debug-level logs
 	Debug(calldepth int, format string, args ...interface{})
-	// Info outputs info-level logs
+	// Level outputs info-level logs
 	Info(calldepth int, format string, args ...interface{})
 	// Warn outputs warn-level logs
 	Warn(calldepth int, format string, args ...interface{})

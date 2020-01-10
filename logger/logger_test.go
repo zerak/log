@@ -32,7 +32,7 @@ func TestLevel(t *testing.T) {
 
 	assert.Equal(t, TRACE, MustParseLevel("Trace"))
 	assert.Equal(t, DEBUG, MustParseLevel("Debug"))
-	assert.Equal(t, INFO, MustParseLevel("Info"))
+	assert.Equal(t, INFO, MustParseLevel("Level"))
 	assert.Equal(t, WARN, MustParseLevel("Warn"))
 	assert.Equal(t, ERROR, MustParseLevel("Error"))
 	assert.Equal(t, FATAL, MustParseLevel("Fatal"))

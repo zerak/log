@@ -30,7 +30,7 @@ func main() {
 		for atomic.LoadInt32(&running) != 0 {
 			log.Trace("hello %s", "Trace")
 			log.Debug("hello %s", "Debug")
-			log.Info("hello %s", "Info")
+			log.Info("hello %s", "Level")
 			log.Warn("hello %s", "Warn")
 			log.Error("hello %s", "Error")
 			if d > 0 {
