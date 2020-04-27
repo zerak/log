@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/mkideal/log"
-	"github.com/mkideal/log/provider"
+	"github.com/zerak/log"
+	"github.com/zerak/log/provider"
 )
 
 func main() {

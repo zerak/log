@@ -3,8 +3,8 @@ package main
 import (
 	"os"
 
-	"github.com/mkideal/log"
-	"github.com/mkideal/log/logger"
+	"github.com/zerak/log"
+	"github.com/zerak/log/logger"
 )
 
 type myProvider struct {

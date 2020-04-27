@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/mkideal/log"
+	"github.com/zerak/log"
 	stdlog "log"
 )
 

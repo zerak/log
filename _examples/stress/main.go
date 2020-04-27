@@ -8,7 +8,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/mkideal/log"
+	"github.com/zerak/log"
 )
 
 var (
